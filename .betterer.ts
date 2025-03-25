@@ -1,8 +1,8 @@
-import { angular } from '@betterer/angular';
+import { bettererAngular } from './betterer-angular';
 
 export default {
   'stricter template compilation': () =>
-    angular('./tsconfig.json', {
+    bettererAngular('./tsconfig.json', {
       strictTemplates: true
-    }).include('./src/*.ts', './src/*.html')
+    }).include('./src/**/*.ts', './src/**/*.html')
 };
